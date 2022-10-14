@@ -22,6 +22,7 @@
 \RequirePackage{graphicx}
 \RequirePackage{textcomp}
 \RequirePackage[protrusion=true, expansion=true, final]{microtype}
+\RequirePackage{xcolor}
 
 \usepackage[backend=biber,bibencoding=utf-8,style=alphabetic-verb]{biblatex}
 \bibliography{literatur}
@@ -65,4 +66,29 @@
   \vskip 3.5em}
 \makeatother
 
-\makeatother
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
